@@ -1,0 +1,43 @@
+﻿# Lancer la réécriture
+RewriteEngine On
+
+# Redirection des pages
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php?page=$1
+
+ErrorDocument 301 /saveAnimals/index.php?page=error301
+ErrorDocument 302 /saveAnimals/index.php?page=error302
+ErrorDocument 400 /saveAnimals/index.php?page=error400
+ErrorDocument 401 /saveAnimals/index.php?page=error401
+ErrorDocument 402 /saveAnimals/index.php?page=error402
+ErrorDocument 403 /saveAnimals/index.php?page=error403
+ErrorDocument 404 /saveAnimals/index.php?page=error404
+ErrorDocument 500 /saveAnimals/index.php?page=error500
+ErrorDocument 505 /saveAnimals/index.php?page=error505
+
+# Supprimer l'affichage du listing des fichiers
+Options All -Indexes
+
+# Masquer les informations serveurs
+ServerSignature Off
+
+# Activer le suivie des liens symboliques
+Options +FollowSymLinks 
+
+# Forcer l'encodage
+AddDefaultCharset UTF-8
+
+# Protection XSS, clickJacking et Mime-Type
+<ifModule mod_headers.c>
+Header set X-XSS-Protection "1; mode=block"
+Header always append X-Frame-Options SAMEORIGIN
+Header set X-Content-Type-Options: "nosniff"
+</ifModule>
+
+#Protection contre les injections des fichiers 
+RewriteCond %{REQUEST_METHOD} GET
+RewriteCond %{QUERY_STRING}[a-zA-Z0-9_]=http:// [OR]
+RewriteCond %{QUERY_STRING}[a-zA-Z0-9_]=(\.\.//?)+ [OR]
+RewriteCond %{QUERY_STRING}[a-zA-Z0-9_]=/([a-z0-9_.]//?)+ [NC]
+RewriteRule .* - [F]

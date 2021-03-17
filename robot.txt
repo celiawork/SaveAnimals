@@ -1,0 +1,6 @@
+user-agent : *
+Disallow: /mentions
+Disallow: /login
+Disallow: /admin
+
+sitemaps : http://one-test.website/sitemaps.xml

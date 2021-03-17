@@ -1,0 +1,257 @@
+﻿@font-face {
+
+    font-family: "Spartan";
+    src: url("fonts/Spartan.ttf");
+}
+
+@font-face {
+
+    font-family: "FredokaOne";
+    src: url("fonts/FredokaOne-Regular.ttf");
+}
+
+/* GENERAL */
+
+html,
+body {
+
+
+    background-image: linear-gradient(347deg, rgba(235, 138, 21, 1), rgba(243, 214, 23, 0.95));
+
+}
+
+body {
+
+    font-family: "Spartan";
+
+}
+
+.container {
+
+    padding-right: 0px;
+    padding-left: 0px
+}
+
+
+.my_minBodySize {
+
+    min-height: 400px;
+}
+
+.my_sectionIndexTitle {
+
+    background-image: url("../sources/images/others/background.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+footer {
+
+    background-color: #D7DBDD;
+}
+
+/* TITLE */
+
+
+.my_titleH1,
+.my_titleH2 {
+
+    font-family: "Copse";
+}
+
+
+/* TEXT */
+
+.my_colorTextAdminMenu {
+
+    color: black;
+}
+
+.my_date {
+
+    font-weight: bolder;
+    color: #FF9B00;
+    font-size: 20px;
+}
+
+.textCaptcha {
+
+    font-size: 11px;
+}
+
+
+/* IMAGES */
+
+.my_borderRadiusImg {
+
+    border-radius: 50%
+}
+
+.icone {
+
+    font-size: 50px;
+}
+
+.iconeContact {
+
+
+    width: 40px;
+}
+
+
+/* DESIGN */
+
+.my_shadow {
+
+    box-shadow: 0px 2px 15px black;
+
+}
+
+.my_shadowContact {
+
+    -webkit-box-shadow: 15px 18px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 15px 18px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 15px 18px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.my_borderBottom {
+
+    border-bottom: thick double orange;
+    width: 20%;
+    margin: 0 auto;
+}
+
+.my_backgroundGrey {
+
+    background-color: #D7DBDD;
+    height: 400px;
+    margin-top: -150px;
+    
+   
+}
+
+.badge {
+
+    padding: 7px;
+}
+
+.my_section_news {
+
+    background-image: url("../sources/images/others/bg_news.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+
+
+
+/* CAROUSEL */
+
+.container-carousel {
+
+    background-color: #f8f9fa;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 300px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+
+}
+
+/* BUTTON */
+
+.my_button {
+    background: #090B0C;
+    background-image: -webkit-linear-gradient(top, #090B0C, #0E0E10);
+    background-image: -moz-linear-gradient(top, #090B0C, #0E0E10);
+    background-image: -ms-linear-gradient(top, #090B0C, #0E0E10);
+    background-image: -o-linear-gradient(top, #090B0C, #0E0E10);
+    background-image: -webkit-gradient(to bottom, #090B0C, #0E0E10);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    color: #FFFFFF;
+    font-family: "Spartan";
+    font-size: 15px;
+    font-weight: 100;
+    padding: 20px;
+
+    -webkit-box-shadow: 1px 1px 20px 0 #000000;
+    -moz-box-shadow: 1px 1px 20px 0 #000000;
+    box-shadow: 1px 1px 20px 0 #000000;
+    text-shadow: 1px 1px 20px #000000;
+    border: solid #FFAE00 1px;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+}
+
+.my_button:hover {
+    border: solid #FFAE00 1px;
+    background: #FF9B00;
+    color: black;
+    background-image: -webkit-linear-gradient(top, #FF9B00, #F6F33D);
+    background-image: -moz-linear-gradient(top, #FF9B00, #F6F33D);
+    background-image: -ms-linear-gradient(top, #FF9B00, #F6F33D);
+    background-image: -o-linear-gradient(top, #FF9B00, #F6F33D);
+    background-image: -webkit-gradient(to bottom, #FF9B00, #F6F33D);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.my_buttonSmall {
+
+    font-size: 13px;
+    padding: 15px;
+    box-shadow: none;
+}
+
+
+/* CARD */
+
+.swiper-container {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+
+}
+
+/* 
+Desktop : au delà de 1024 pixels
+Tablette : entre 600 et 1024 pixels (en mode portrait)
+Mobile : entre 320 et 600 pixels (en mode portrait) */
+
+/* BOOTSTRAP
+@media(max-width:767px){}
+@media(min-width:768px){}
+@media(min-width:992px){}
+@media(min-width:1200px){} */
+
+@media screen and (max-width: 1280px) {
+
+    .my_shadowContact {
+
+        box-shadow: none;
+    }
+
+}

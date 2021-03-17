@@ -1,0 +1,7 @@
+﻿## Apache 2.2
+#Deny from all
+
+## Apache 2.4
+
+# Interdire l'accès au dossier
+Require all denied
