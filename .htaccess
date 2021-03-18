@@ -1,6 +1,8 @@
 ﻿# Lancer la réécriture
 RewriteEngine On
 
+RewriteBase /
+
 # Redirection des pages
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
