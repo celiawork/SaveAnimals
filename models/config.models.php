@@ -1,8 +1,8 @@
 ﻿<?php
 
-const HOST_NAME = "localhost";
-const DATABASE_NAME = "saveanimals";
-const USER_NAME = "root";
-const PASSWORD = "";
+const HOST_NAME = "*******";
+const DATABASE_NAME = "*********";
+const USER_NAME = "********";
+const PASSWORD = "********";
 
 ?>
